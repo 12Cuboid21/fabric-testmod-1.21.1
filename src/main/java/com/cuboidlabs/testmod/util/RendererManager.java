@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.render.*;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.RotationAxis;
 import org.joml.Matrix4f;
 
 import java.awt.*;
@@ -23,15 +24,24 @@ public class RendererManager {
         registered = true;
 
         HudRenderCallback.EVENT.register((drawContext, tickDelta) -> {
-            Matrix4f transformationMatrix = drawContext.getMatrices().peek().getPositionMatrix();
             Tessellator tessellator = Tessellator.getInstance();
             MatrixStack matrices = drawContext.getMatrices();
 
             totalTickDelta += tickDelta.getTickDelta(true);
+            System.out.println("TickDelta: " + tickDelta.getTickDelta(true) + ", Total: " + totalTickDelta);
 
             matrices.push();
+            Matrix4f transformationMatrix = matrices.peek().getPositionMatrix();
+
+            //rotation
+            float rotAmount = (float) (totalTickDelta / 50F % 360);
+            matrices.multiply(RotationAxis.POSITIVE_Z.rotation(rotAmount));
+
+            matrices.translate(-20f, -40f, 0f);
+            //rotation end
 
             float scaleAmount = MathHelper.sin(totalTickDelta / 10F) / 2F + 1.5F;
+            System.out.println(scaleAmount);
 
             matrices.scale(scaleAmount, scaleAmount, 1F);
 

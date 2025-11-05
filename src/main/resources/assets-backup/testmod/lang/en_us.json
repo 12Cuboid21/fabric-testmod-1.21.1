@@ -1,0 +1,20 @@
+{
+  "item.testmod.photon": "Photon",
+  "item.testmod.light_ray": "Light Ray",
+  "item.testmod.photonobrush": "PhotonoBrush",
+  "item.testmod.magicalfud": "MagicalFud",
+  "item.testmod.powdered_photons": "Powdered Photons",
+
+  "block.testmod.test_block": "Test Block",
+  "block.testmod.tesi_block": "Tesi Block",
+  "block.testmod.magic_block": "Magic Block",
+
+  "itemgroup.testmod.test_mod_items": "Test Mod Items",
+  "itemgroup.testmod.test_mod_blocks": "Test Mod Blocks",
+
+  "tooltip.testmod.magic_block.tooltip": "This block can repair your §9PhotonoBrush§r when thrown on top.",
+  "tooltip.testmod.photonobrush.shift_down": "§9This item upgrades the material it has been used on.§r",
+  "tooltip.testmod.photonobrush.shift_up": "§ePress§r §aSHIFT§r §efor more info.§r",
+  "tooltip.testmod.photon.shift_up": "§ePress§r §aSHIFT§r §efor more info.§r",
+  "tooltip.testmod.photon.shift_down": "§9This item is used as a material.§r"
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:test_block",
+    "testmod:tesi_block",
+    "testmod:magic_block"
+  ]
+}

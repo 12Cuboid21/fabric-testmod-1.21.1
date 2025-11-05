@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "testmod:item/photonobrush0"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "testmod:chargelevel": 1
+      },
+      "model": "testmod:item/photonobrush_1"
+    },
+    {
+      "predicate": {
+        "testmod:chargelevel": 2
+      },
+      "model": "testmod:item/photonobrush_2"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_photon": {
+      "conditions": {
+        "items": [
+          {
+            "items": "testmod:photon"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "testmod:light_ray"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_photon"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "testmod:light_ray"
+    ]
+  }
+}

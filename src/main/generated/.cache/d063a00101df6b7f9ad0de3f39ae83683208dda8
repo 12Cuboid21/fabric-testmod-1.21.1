@@ -1,0 +1,5 @@
+// 1.21.1	2025-11-02T18:37:43.1817232	TestMod/Recipes
+35a8c73a2edc5b52ca559af5f5033eb45509699b data\testmod\advancement\recipes\misc\light_ray.json
+aae9f5a5ec7b38371c5000858e40174a9289e445 data\testmod\advancement\recipes\misc\photonobrush.json
+e3084a51479a3905a4e2065d4b33800c287955b1 data\testmod\recipe\photonobrush.json
+f056b1622ad10317d7c02fcf16362d60ac8ab97c data\testmod\recipe\light_ray.json

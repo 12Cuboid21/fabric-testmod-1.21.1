@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "testmod:test_block",
+    "testmod:magic_block"
+  ]
+}

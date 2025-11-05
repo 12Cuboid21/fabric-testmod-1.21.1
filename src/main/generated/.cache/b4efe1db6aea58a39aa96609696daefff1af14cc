@@ -1,0 +1,15 @@
+// 1.21.1	2025-11-02T18:37:43.175086	TestMod/Model Definitions
+e7445b5e6d3b389bec0abd0b898f4d4105a85a40 assets\testmod\models\block\tesi_block.json
+e74be35792306d17fb5b318ddd98e0a1affe5e47 assets\testmod\blockstates\magic_block.json
+c208ec43fa86882c5cf0cfffbc412e1c66dc6eba assets\testmod\models\item\magic_block.json
+927d1ef879822fe2f13c821074e1048fe9706177 assets\testmod\models\item\tesi_block.json
+9a06e54e22cd98054d399605ca2038951a99fa94 assets\testmod\models\block\magic_block.json
+16674311f00b9d4a616bed827aaac7a2f0d1b0de assets\testmod\models\item\shader_spawner.json
+c52064bc4ba95af2a00394c02858e8eed6391fb3 assets\testmod\blockstates\tesi_block.json
+3a655c722ceff3ac107ee713673975d05f4757de assets\testmod\models\item\powdered_photons.json
+309c303826302d53ffb39b356171bddb686fe6fb assets\testmod\models\item\magicalfud.json
+0e4b886ba06242fa9d4c64a8eda27de529bb9c86 assets\testmod\models\item\test_block.json
+caa818a2af90465fcacce857d75101ea4f624e8a assets\testmod\blockstates\test_block.json
+771395b31e69a06dd22e9603d8999356806300f5 assets\testmod\models\item\light_ray.json
+d89f8c14e046340eae1e8e020977cc0c0bbf5b48 assets\testmod\models\item\photon.json
+cbf4ede4794e9a0ea8fcf7f7db56845956774705 assets\testmod\models\block\test_block.json

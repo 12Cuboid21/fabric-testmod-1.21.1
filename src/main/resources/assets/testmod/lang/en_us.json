@@ -18,5 +18,7 @@
   "tooltip.testmod.photonobrush.shift_down": "§9This item upgrades the material it has been used on.§r",
   "tooltip.testmod.photonobrush.shift_up": "§ePress§r §aSHIFT§r §efor more info.§r",
   "tooltip.testmod.photon.shift_up": "§ePress§r §aSHIFT§r §efor more info.§r",
-  "tooltip.testmod.photon.shift_down": "§9This item is used as a material.§r"
+  "tooltip.testmod.photon.shift_down": "§9This item is used as a material.§r",
+
+  "entity.testmod.light_cycle": "Light Cycle"
 }

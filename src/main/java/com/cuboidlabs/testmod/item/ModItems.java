@@ -1,6 +1,7 @@
 package com.cuboidlabs.testmod.item;
 
 import com.cuboidlabs.testmod.TestMod;
+import com.cuboidlabs.testmod.item.custom.LightCycleSpawnerItem;
 import com.cuboidlabs.testmod.item.custom.PhotonoBrushItem;
 import com.cuboidlabs.testmod.item.custom.ShaderSpawnerItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -33,7 +34,7 @@ public class ModItems {
     public static final Item MAGICALFUD = registerItem("magicalfud", new Item(new Item.Settings().food(ModFoodComponents.MAGICALIFUD)));
     public static final Item POWDERED_PHOTONS = registerItem("powdered_photons", new Item( new Item.Settings()));
     public static final Item SHADER_SPAWNER = registerItem("shader_spawner", new ShaderSpawnerItem(new Item.Settings().maxCount(1)));
-    public static final Item LIGHT_CYCLE_SPAWNER = registerItem("light_cycle_spawner", new Item(new Item.Settings()));
+    public static final Item LIGHT_CYCLE_SPAWNER = registerItem("light_cycle_spawner", new LightCycleSpawnerItem(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TestMod.MOD_ID, name), item);

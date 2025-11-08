@@ -2,11 +2,14 @@ package com.cuboidlabs.testmod;
 
 import com.cuboidlabs.testmod.block.ModBlocks;
 import com.cuboidlabs.testmod.component.ModDataComponentTypes;
+import com.cuboidlabs.testmod.entity.ModEntities;
+import com.cuboidlabs.testmod.entity.custom.LightCycleEntity;
 import com.cuboidlabs.testmod.item.ModItemGroups;
 import com.cuboidlabs.testmod.item.ModItems;
 import com.cuboidlabs.testmod.util.ModModelPredicates;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +28,7 @@ public class TestMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
 		ModDataComponentTypes.registerDataComponentTypes();
+        ModEntities.registerModEntities();
 
 		FuelRegistry.INSTANCE.add(ModItems.POWDERED_PHOTONS, 5000);
 	}

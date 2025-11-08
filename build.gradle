@@ -38,6 +38,10 @@ repositories {
 	maven { url = uri("https://jitpack.io") }*/
 }
 
+loom {
+	accessWidenerPath = file("src/main/resources/${project.mod_id}.accesswidener")
+}
+
 fabricApi {
 	configureDataGeneration {
 		client = true

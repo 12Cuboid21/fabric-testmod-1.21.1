@@ -8,14 +8,12 @@ import net.minecraft.entity.VariantHolder;
 import net.minecraft.entity.vehicle.VehicleEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.world.World;
 
 import java.lang.reflect.Type;
 
 public class LightCycleEntity extends VehicleEntity {
-    public final AnimationState idleAnimationState = new AnimationState();
-    private int idleAnimationTimeout = 0;
-
     public LightCycleEntity(EntityType<?> entityType, World world) {
         super(entityType, world);
     }
@@ -26,6 +24,17 @@ public class LightCycleEntity extends VehicleEntity {
         // your custom logic here
     }
 
+    @Override
+    protected void readCustomDataFromNbt(NbtCompound nbt) {
+
+    }
+
+    @Override
+    protected void writeCustomDataToNbt(NbtCompound nbt) {
+
+    }
+
+    @Override
     public Item asItem() {
         return ModItems.LIGHT_CYCLE_SPAWNER;
     }

@@ -22,6 +22,7 @@ public class ModItemGroups {
                       entries.add(ModItems.PHOTONOBRUSH);
                       entries.add(ModItems.MAGICALFUD);
                       entries.add(ModItems.SHADER_SPAWNER);
+                      entries.add(ModItems.LIGHT_CYCLE_SPAWNER);
                     }).build());
 
     public static final ItemGroup TEST_MOD_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

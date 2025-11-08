@@ -28,5 +28,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MAGICALFUD, Models.GENERATED);
         itemModelGenerator.register(ModItems.POWDERED_PHOTONS, Models.GENERATED);
         itemModelGenerator.register(ModItems.SHADER_SPAWNER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIGHT_CYCLE_SPAWNER, Models.GENERATED);
     }
 }

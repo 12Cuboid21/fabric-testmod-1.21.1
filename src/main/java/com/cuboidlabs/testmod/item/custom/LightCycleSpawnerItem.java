@@ -18,6 +18,7 @@ public class LightCycleSpawnerItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack stack = user.getStackInHand(hand);
+        Boolean creative = user.isInCreativeMode();
         if (!world.isClient) {
             Vec3d look = user.getRotationVector();
             Vec3d spawnPos = user.getPos().add(look.multiply(1.5)).add(0, 0.1, 0);
@@ -30,7 +31,9 @@ public class LightCycleSpawnerItem extends Item {
             );
 
             world.spawnEntity(bike);
-            stack.decrement(1);
+            if (!creative) {
+                stack.decrement(1);
+            }
         }
         return TypedActionResult.success(stack);
     }

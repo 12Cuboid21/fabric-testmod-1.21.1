@@ -31,5 +31,7 @@ public class TestMod implements ModInitializer {
         ModEntities.registerModEntities();
 
 		FuelRegistry.INSTANCE.add(ModItems.POWDERED_PHOTONS, 5000);
+
+		FabricDefaultAttributeRegistry.register(ModEntities.LIGHT_CYCLE, LightCycleEntity.createAttributes());
 	}
 }

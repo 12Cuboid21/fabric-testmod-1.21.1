@@ -2,19 +2,22 @@ package com.cuboidlabs.testmod.entity.client;
 
 import com.cuboidlabs.testmod.TestMod;
 import com.cuboidlabs.testmod.entity.custom.LightCycleEntity;
+import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
+import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.entity.Entity;
 import net.minecraft.util.Identifier;
 
-public class LightCycleRenderer extends EntityRenderer<LightCycleEntity> {
-    private final LightCycleModel<LightCycleEntity> model;
+import java.awt.*;
 
-    public LightCycleRenderer(EntityRendererFactory.Context ctx) {
-        super(ctx);
-        this.model = new LightCycleModel<>(ctx.getPart(LightCycleModel.LIGHT_CYCLE));
+public class LightCycleRenderer extends MobEntityRenderer<LightCycleEntity, LightCycleModel<LightCycleEntity>> {
+
+    public LightCycleRenderer(EntityRendererFactory.Context context) {
+        super(context, new LightCycleModel<>(context.getPart(LightCycleModel.LIGHT_CYCLE)), 0.5f);
     }
 
     @Override
@@ -23,8 +26,11 @@ public class LightCycleRenderer extends EntityRenderer<LightCycleEntity> {
     }
 
     @Override
-    public void render(LightCycleEntity entity, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light) {
-        matrices.scale(1f, 1f, 1f);
-        super.render(entity, yaw, tickDelta, matrices, vertexConsumers, light);
+    public void render(LightCycleEntity livingEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
+        float cycleSize = 2f;
+
+        matrixStack.scale(cycleSize, cycleSize, cycleSize);
+
+        super.render(livingEntity, f, g, matrixStack, vertexConsumerProvider, i);
     }
 }
